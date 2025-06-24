@@ -1,0 +1,36 @@
+{
+  "name": "1chooo-com",
+  "version": "0.11.6",
+  "private": true,
+  "author": {
+    "name": "Chun-Ho (Hugo) Lin",
+    "email": "hugo@1chooo.com",
+    "url": "https://1chooo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1chooo/portfolio"
+  },
+  "description": "1chooo.com is a personal portfolio and blog website built with Next.js, React, and TypeScript. It features a modern design, supports Markdown content, and includes various interactive components.",
+  "homepage": "https://1chooo.com",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "test": "turbo run test",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "delete": "rm -rf apps/docs/ && rm -rf apps/web/src/contents/ && rm -rf apps/web/src/config/index.ts",
+    "gen-config": "node scripts/gen-config.js"
+  },
+  "devDependencies": {
+    "@1chooo/eslint-config": "workspace:*",
+    "@1chooo/typescript-config": "workspace:*",
+    "prettier": "^3.5.3",
+    "turbo": "2.5.4",
+    "typescript": "5.8.3"
+  },
+  "packageManager": "pnpm@10.12.1+sha256.889bac470ec93ccc3764488a19d6ba8f9c648ad5e50a9a6e4be3768a5de387a3",
+  "engines": {
+    "node": ">=20"
+  }
+}

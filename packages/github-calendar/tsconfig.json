@@ -1,0 +1,18 @@
+{
+  "extends": "@1chooo/typescript-config/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@1chooo/activity-calendar/*": [
+        "./src/*"
+      ]
+    },
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
